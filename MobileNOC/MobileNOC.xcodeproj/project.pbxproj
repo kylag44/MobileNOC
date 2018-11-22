@@ -12,6 +12,10 @@
 		253F32D521A62ED0001153AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253F32D321A62ED0001153AC /* Main.storyboard */; };
 		253F32D721A62ED1001153AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 253F32D621A62ED1001153AC /* Assets.xcassets */; };
 		253F32DA21A62ED1001153AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253F32D821A62ED1001153AC /* LaunchScreen.storyboard */; };
+		2548074921A637F500D35589 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2548074821A637F500D35589 /* Service.swift */; };
+		2548076D21A67D1000D35589 /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2548076C21A67D1000D35589 /* HomeDatasourceController.swift */; };
+		2548076F21A6881500D35589 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2548076E21A6881500D35589 /* Cells.swift */; };
+		2548077121A6888E00D35589 /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2548077021A6888E00D35589 /* HomeDatasource.swift */; };
 		2C66402195AF5D94F3386AB0 /* Pods_MobileNOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF4707BA52EE9292941CD76 /* Pods_MobileNOC.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +27,10 @@
 		253F32D621A62ED1001153AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		253F32D921A62ED1001153AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		253F32DB21A62ED1001153AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2548074821A637F500D35589 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		2548076C21A67D1000D35589 /* HomeDatasourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
+		2548076E21A6881500D35589 /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		2548077021A6888E00D35589 /* HomeDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
 		5BF4707BA52EE9292941CD76 /* Pods_MobileNOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileNOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9195A6CA37320BF72AF6F7 /* Pods-MobileNOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNOC/Pods-MobileNOC.release.xcconfig"; sourceTree = "<group>"; };
 		A28424D0D2E8F098F2B91C4E /* Pods-MobileNOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNOC/Pods-MobileNOC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				253F32CF21A62ED0001153AC /* AppDelegate.swift */,
+				2548074821A637F500D35589 /* Service.swift */,
+				2548077021A6888E00D35589 /* HomeDatasource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -83,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				253F32D121A62ED0001153AC /* ViewController.swift */,
+				2548076C21A67D1000D35589 /* HomeDatasourceController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -91,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				253F32D321A62ED0001153AC /* Main.storyboard */,
+				2548076E21A6881500D35589 /* Cells.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -230,8 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2548074921A637F500D35589 /* Service.swift in Sources */,
+				2548076D21A67D1000D35589 /* HomeDatasourceController.swift in Sources */,
 				253F32D221A62ED0001153AC /* ViewController.swift in Sources */,
+				2548077121A6888E00D35589 /* HomeDatasource.swift in Sources */,
 				253F32D021A62ED0001153AC /* AppDelegate.swift in Sources */,
+				2548076F21A6881500D35589 /* Cells.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +397,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8457254V38;
 				INFOPLIST_FILE = MobileNOC/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Kyla.MobileNOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -397,7 +416,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8457254V38;
 				INFOPLIST_FILE = MobileNOC/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Kyla.MobileNOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
