@@ -10,7 +10,28 @@ import LBTAComponents
 
 class HomeDatasource: Datasource {
   
-  let words = ["user1", "user2", "user3"]
+  let users: [UserData] = {
+    let user1 = UserData(name: "Brazil", name2: "BRSANBCM01", ipAddress: "10.75.0.1", deviceIPSubnetMask: "255.255.255.0")
+    let user2 = UserData(name: "Brazil", name2: "BRSANBCM01", ipAddress: "10.75.0.1", deviceIPSubnetMask: "255.255.255.0")
+    let user3 = UserData(name: "Brazil", name2: "BRSANBCM01", ipAddress: "10.75.0.1", deviceIPSubnetMask: "255.255.255.0")
+    let user4 = UserData(name: "Brazil", name2: "BRSANBCM01", ipAddress: "10.75.0.1", deviceIPSubnetMask: "255.255.255.0")
+    return [user1, user2, user3, user4]
+  }()
+  
+  let users2: [UserData2] = {
+    let users1 = UserData2(name: "Argentina", name2: "BRSANBCM01", ipAddress: "10.75.0.1", deviceIPSubnetMask: "255.255.255.0")
+    let users2 = UserData2(name: "Argentina", name2: "BRSANBCM01", ipAddress: "10.75.0.1", deviceIPSubnetMask: "255.255.255.0")
+    let users3 = UserData2(name: "Argentina", name2: "BRSANBCM01", ipAddress: "10.75.0.1", deviceIPSubnetMask: "255.255.255.0")
+    let users4 = UserData2(name: "Argentina", name2: "BRSANBCM01", ipAddress: "10.75.0.1", deviceIPSubnetMask: "255.255.255.0")
+    let users5 = UserData2(name: "Argentina", name2: "BRSANBCM01", ipAddress: "10.75.0.1", deviceIPSubnetMask: "255.255.255.0")
+    let users6 = UserData2(name: "Argentina", name2: "BRSANBCM01", ipAddress: "10.75.0.1", deviceIPSubnetMask: "255.255.255.0")
+    let users7 = UserData2(name: "Argentina", name2: "BRSANBCM01", ipAddress: "10.75.0.1", deviceIPSubnetMask: "255.255.255.0")
+    let users8 = UserData2(name: "Argentina", name2: "BRSANBCM01", ipAddress: "10.75.0.1", deviceIPSubnetMask: "255.255.255.0")
+    let users9 = UserData2(name: "Argentina", name2: "BRSANBCM01", ipAddress: "10.75.0.1", deviceIPSubnetMask: "255.255.255.0")
+    let users10 = UserData2(name: "Argentina", name2: "BRSANBCM01", ipAddress: "10.75.0.1", deviceIPSubnetMask: "255.255.255.0")
+    return [users1, users2, users3, users4, users5, users6, users7, users8, users9, users10]
+  }()
+
   
   override func footerClasses() -> [DatasourceCell.Type]? {
     return [UserFooter.self]
@@ -21,15 +42,25 @@ class HomeDatasource: Datasource {
   }
   
   override func cellClasses() -> [DatasourceCell.Type] {
-    return [InfoCell.self]
+    return [InfoCell.self, InfoCell2.self]
   }
   
   override func item(_ indexPath: IndexPath) -> Any? {
-    return words[indexPath.item]
+    if indexPath.section == 1 {
+      return users2[indexPath.item]
+    }
+    return users[indexPath.item]
+  }
+  
+  override func numberOfSections() -> Int {
+    return 2
   }
   
   override func numberOfItems(_ section: Int) -> Int {
-    return words.count
+    if section == 1 {
+      return users2.count
+    }
+    return users.count
   }
   
 }

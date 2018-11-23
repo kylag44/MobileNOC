@@ -8,29 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		253F32D021A62ED0001153AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253F32CF21A62ED0001153AC /* AppDelegate.swift */; };
-		253F32D221A62ED0001153AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253F32D121A62ED0001153AC /* ViewController.swift */; };
 		253F32D521A62ED0001153AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253F32D321A62ED0001153AC /* Main.storyboard */; };
 		253F32D721A62ED1001153AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 253F32D621A62ED1001153AC /* Assets.xcassets */; };
 		253F32DA21A62ED1001153AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253F32D821A62ED1001153AC /* LaunchScreen.storyboard */; };
 		2548074921A637F500D35589 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2548074821A637F500D35589 /* Service.swift */; };
 		2548076D21A67D1000D35589 /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2548076C21A67D1000D35589 /* HomeDatasourceController.swift */; };
-		2548076F21A6881500D35589 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2548076E21A6881500D35589 /* Cells.swift */; };
+		2548076F21A6881500D35589 /* UserHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2548076E21A6881500D35589 /* UserHeaderFooter.swift */; };
 		2548077121A6888E00D35589 /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2548077021A6888E00D35589 /* HomeDatasource.swift */; };
+		2561121321A7324800AAAA1E /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561121221A7324800AAAA1E /* UserData.swift */; };
+		2561121521A739E800AAAA1E /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561121421A739E800AAAA1E /* InfoCell.swift */; };
+		2561121721A73B3200AAAA1E /* UserData2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561121621A73B3200AAAA1E /* UserData2.swift */; };
+		2561121921A744F400AAAA1E /* HomeDatasourceController+NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561121821A744F400AAAA1E /* HomeDatasourceController+NavBar.swift */; };
+		2561121B21A75E2000AAAA1E /* InfoCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561121A21A75E2000AAAA1E /* InfoCell2.swift */; };
 		2C66402195AF5D94F3386AB0 /* Pods_MobileNOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF4707BA52EE9292941CD76 /* Pods_MobileNOC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		253F32CC21A62ED0001153AC /* MobileNOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileNOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		253F32CF21A62ED0001153AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		253F32D121A62ED0001153AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		253F32D421A62ED0001153AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		253F32D621A62ED1001153AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		253F32D921A62ED1001153AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		253F32DB21A62ED1001153AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2548074821A637F500D35589 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		2548076C21A67D1000D35589 /* HomeDatasourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
-		2548076E21A6881500D35589 /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		2548076E21A6881500D35589 /* UserHeaderFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeaderFooter.swift; sourceTree = "<group>"; };
 		2548077021A6888E00D35589 /* HomeDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
+		2561121221A7324800AAAA1E /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		2561121421A739E800AAAA1E /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		2561121621A73B3200AAAA1E /* UserData2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData2.swift; sourceTree = "<group>"; };
+		2561121821A744F400AAAA1E /* HomeDatasourceController+NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeDatasourceController+NavBar.swift"; sourceTree = "<group>"; };
+		2561121A21A75E2000AAAA1E /* InfoCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell2.swift; sourceTree = "<group>"; };
 		5BF4707BA52EE9292941CD76 /* Pods_MobileNOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileNOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9195A6CA37320BF72AF6F7 /* Pods-MobileNOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNOC/Pods-MobileNOC.release.xcconfig"; sourceTree = "<group>"; };
 		A28424D0D2E8F098F2B91C4E /* Pods-MobileNOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNOC/Pods-MobileNOC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +93,8 @@
 				253F32CF21A62ED0001153AC /* AppDelegate.swift */,
 				2548074821A637F500D35589 /* Service.swift */,
 				2548077021A6888E00D35589 /* HomeDatasource.swift */,
+				2561121221A7324800AAAA1E /* UserData.swift */,
+				2561121621A73B3200AAAA1E /* UserData2.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,8 +102,8 @@
 		253F32E321A62F4F001153AC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				253F32D121A62ED0001153AC /* ViewController.swift */,
 				2548076C21A67D1000D35589 /* HomeDatasourceController.swift */,
+				2561121821A744F400AAAA1E /* HomeDatasourceController+NavBar.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -102,7 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				253F32D321A62ED0001153AC /* Main.storyboard */,
-				2548076E21A6881500D35589 /* Cells.swift */,
+				2548076E21A6881500D35589 /* UserHeaderFooter.swift */,
+				2561121421A739E800AAAA1E /* InfoCell.swift */,
+				2561121A21A75E2000AAAA1E /* InfoCell2.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,12 +254,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2561121B21A75E2000AAAA1E /* InfoCell2.swift in Sources */,
 				2548074921A637F500D35589 /* Service.swift in Sources */,
 				2548076D21A67D1000D35589 /* HomeDatasourceController.swift in Sources */,
-				253F32D221A62ED0001153AC /* ViewController.swift in Sources */,
+				2561121321A7324800AAAA1E /* UserData.swift in Sources */,
 				2548077121A6888E00D35589 /* HomeDatasource.swift in Sources */,
 				253F32D021A62ED0001153AC /* AppDelegate.swift in Sources */,
-				2548076F21A6881500D35589 /* Cells.swift in Sources */,
+				2561121721A73B3200AAAA1E /* UserData2.swift in Sources */,
+				2548076F21A6881500D35589 /* UserHeaderFooter.swift in Sources */,
+				2561121921A744F400AAAA1E /* HomeDatasourceController+NavBar.swift in Sources */,
+				2561121521A739E800AAAA1E /* InfoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
