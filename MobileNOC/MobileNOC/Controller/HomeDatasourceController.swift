@@ -23,13 +23,13 @@ class HomeDatasourceController: DatasourceController {
     
     
     let login = "admin@boot.com"
-    let password = "admin"
-    
-    let url = NSURL(string: "https://45.55.43.15:9090/api/machine?page=0&size=10")
-    let request = NSMutableURLRequest(url: url! as URL)
-    
+    let password1 = "admin"
+
+    let url2 = NSURL(string: "https://45.55.43.15:9090/api/machine?page=0&size=10")
+    let request = NSMutableURLRequest(url: url2! as URL)
+
     let config = URLSessionConfiguration.default
-    let userPasswordString = "\(login):\(password)"
+    let userPasswordString = "\(login):\(password1)"
     let userPasswordData = userPasswordString.data(using: String.Encoding.utf8)
     let base64EncodedCredential = userPasswordData?.base64EncodedData()
 
@@ -38,17 +38,31 @@ class HomeDatasourceController: DatasourceController {
     let session = URLSession(configuration: config)
     let task = session.dataTask(with: request as URLRequest) { (data, response, error) -> Void in
     }
-    task.resume()
-//    let jsonUrlString = "https://45.55.43.15:9090/api/machine?page=0&size=10"
-//        guard let url = URL(string: jsonUrlString) else { return }
-//
-//        URLSession.shared.dataTask(with: url) { (data, response, err) in
-//
-//          guard let data = data else { return }
-//          let dataAsString = String(data: data, encoding: .utf8)
-//          print(dataAsString!)
-//          }.resume()
+    
+//    let username = "admin@boot.com"
+//    let password = "admin"
+//    let loginString = "\(username):\(password)"
+//      guard let loginData = loginString.data(using: String.Encoding.utf8) else {
+//      return
+//      }
+//    let base64LoginString = loginData.base64EncodedString()
+//      request.httpMethod = "GET"
+//      request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "https://45.55.43.15:9090/api/machine?page=0&size=10")
+//    print(base64LoginString)
+    
+    let jsonUrlString = "https://45.55.43.15:9090/api/machine?page=0&size=10"
+        guard let url = URL(string: jsonUrlString) else { return }
+
+        URLSession.shared.dataTask(with: url) { (data, response, err) in
+
+          guard let data = data else { return }
+          let dataAsString = String(data: data, encoding: .utf8)
+          print(dataAsString!)
+          }.resume()
   }
+  
+  
+
   
 //  private func setUpNavigationBarItems() {
 //    let titleImageView = UIImageView(image: UIImage(named: "GrayGlobe"))

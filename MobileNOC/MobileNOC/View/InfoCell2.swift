@@ -24,7 +24,7 @@ class InfoCell2: DatasourceCell {
     let imageView = UIImageView()
     imageView.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
     imageView.backgroundColor = .red
-    imageView.image = UIImage(named: "dog8")
+    imageView.image = UIImage(named: "Avatar")
     imageView.layer.cornerRadius = imageView.frame.height / 2
     imageView.layer.masksToBounds = true
     imageView.mask?.contentMode = .scaleAspectFit
